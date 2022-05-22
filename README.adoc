@@ -5,7 +5,161 @@
 
 Welcome to the Burger API #README. This application is an API of a burger data base that utilizes RESTful API methods to GET, POST, DELETE, and PUT menu items into a burger database. 
 
-.Acess the application:
+[%header,cols=1*]
 |===
-|Access App at https://mccabe-burger-api.herokuapp.com/
+|Access App at: https://mccabe-burger-api.herokuapp.com/
 |===
+
+=== Work citation 
+This application was developed by https://www.youtube.com/c/AniaKub%C3%B3w[Code with Ania Kubow] 
+
+The original source code can be located at Ania Kubow's https://github.com/kubowania/burger-api[Git Hub Repository]
+
+NOTE: I do not claim ownership of this code. This code has been copied for the purposes of creating RESTful API documentation. 
+
+
+=== Getting started 
+
+The Buger API is a data base for housing burger menu items at various resturants. Burgers can be added to the database with their name, ingredients, resturant name, and location. 
+
+==== Access 
+The API is open access to all in order to test HTTP methods for editing the database. 
+
+The api is hosted via Heroku at https://mccabe-burger-api.herokuapp.com/
+
+==== Interaction with the data base
+
+Interaction with the data base can be dont with GET, POST, PUT, and DELETE requests. For example, to get a specific burger with an index ID of 0, use the following code: 
+....
+fetch('https://my-burger-api.herokuapp.com/burgers/0')
+  .then(response => response.json())
+  .then(data => console.log(data));
+....
+
+NOTE: The above code was provided by Ania Kubow in the original repository https://github.com/kubowania/burger-api[README]
+
+
+=== GET 
+
+==== `/burgers`
+
+The burgers path will `GET` a compelte list of available burgers. 
+
+[%header,cols=1]
+|===
+|Path: https://mccabe-burger-api.herokuapp.com/burgers
+|===
+
+*Sample response*
+
+....
+[
+    {
+        "id": 0,
+        "name": "Tribute Burger",
+        "restaurant": "Honest Burgers",
+        "web": "www.honestburgers.co.uk",
+        "description": "A mouth-watering honest beef burger",
+        "ingredients": [
+            "beef",
+            "american cheese",
+            "burger sauce",
+            "french mustard",
+            "pickes",
+            "onion",
+            "lettuce"
+        ],
+        "addresses": [
+            {
+                "addressId": 0,
+                "number": "75",
+                "line1": "Venn Street",
+                "line2": "Clapham",
+                "postcode": "SW4 0BD",
+                "country": "United Kingdom"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Pulled Mooshie",
+        "restaurant": "Mooshies",
+        "web": "www.veganburger.org",
+        "description": "Spicy vegan burger with jackfruit",
+        "ingredients": [
+            "jackfruit",
+            "coleslaw",
+            "gluten free bun"
+        ],
+        "addresses": [
+            {
+                "addressId": 0,
+                "number": "104",
+                "line1": "Brick Lane",
+                "line2": "Shoreditch",
+                "postcode": "E1 6RL",
+                "country": "United Kingdom"
+            }
+        ]
+    },
+    ...
+]
+....
+
+NOTE : The `...` represents the remaining objects that have been omitted for berevity. 
+
+
+==== `/burgers/id`
+
+The burger/id endpoint will retrieve a specfic burger or object from the data base. 
+
+[%header,cols=1]
+|===
+|Path: https://mccabe-burger-api.herokuapp.com/burgers/4
+|===
+
+*Sample response*
+
+....
+{
+    "id": 4,
+    "name": "Crunchy Nacho Burger",
+    "restaurant": "Max Burgers",
+    "web": "https://www.max.se/maten/meny/burgare/crunchy-nacho-burger/",
+    "description": "The best combination of crunchiness and softness, all in one single burger",
+    "ingredients": [
+        "sesame bun",
+        "salsa",
+        "cheddar",
+        "nachos",
+        "beef",
+        "tomato",
+        "pickled onion",
+        "lettuce",
+        "jalapeño mayonnaise"
+    ],
+    "addresses": [
+        {
+            "addressId": 0,
+            "number": "48D",
+            "line1": "Skeppsbrogatan",
+            "line2": "Luleå",
+            "postcode": "971 25",
+            "country": "Sweden"
+        }
+    ]
+}
+....
+
+==== Status codes 
+
+`200 OK` 
+
+Successful response 
+
+`404 Not Found`
+
+Invalid path
+
+
+
