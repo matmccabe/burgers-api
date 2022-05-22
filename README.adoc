@@ -1,0 +1,11 @@
+= Burger API documentation 
+#readme 
+
+== App inforation 
+
+Welcome to the Burger API #README. This application is an API of a burger data base that utilizes RESTful API methods to GET, POST, DELETE, and PUT menu items into a burger database. 
+
+.Acess the application:
+|===
+|Access App at https://mccabe-burger-api.herokuapp.com/
+|===
