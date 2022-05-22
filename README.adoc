@@ -106,17 +106,19 @@ The burgers path will `GET` a compelte list of available burgers.
 ]
 ....
 
-NOTE : The `...` represents the remaining objects that have been omitted for berevity. 
+NOTE : The `...` represents the remaining objects that have been omitted for brevity. 
 
 
 ==== `/burgers/id`
 
-The burger/id endpoint will retrieve a specfic burger or object from the data base. 
+The `burger/id` endpoint will retrieve a specfic burger or object from the data base. 
 
 [%header,cols=1]
 |===
 |Path: https://mccabe-burger-api.herokuapp.com/burgers/4
 |===
+
+
 
 *Sample response*
 
