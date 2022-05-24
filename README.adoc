@@ -3,7 +3,7 @@
 
 == App inforation 
 
-Welcome to the Burger API #README. This application is an API of a burger data base that utilizes RESTful API methods to GET, POST, DELETE, and PUT menu items into a burger database. 
+Welcome to the Burger API #README. This application is an API of a burger database that utilizes RESTful API methods to GET, POST, DELETE, and PUT menu items into a burger database. 
 
 [%header,cols=1*]
 |===
@@ -27,9 +27,9 @@ The API is open access to all in order to test HTTP methods for editing the data
 
 The api is hosted via Heroku at https://mccabe-burger-api.herokuapp.com/
 
-==== Interaction with the data base
+==== Interaction with the database
 
-Interaction with the data base can be dont with GET, POST, PUT, and DELETE requests. For example, to get a specific burger with an index ID of 0, use the following code: 
+Interaction with the database can be dont with GET, POST, PUT, and DELETE requests. For example, to get a specific burger with an index ID of 0, use the following code: 
 ....
 fetch('https://my-burger-api.herokuapp.com/burgers/0')
   .then(response => response.json())
@@ -111,7 +111,7 @@ NOTE : The `...` represents the remaining objects that have been omitted for bre
 
 ==== `/burgers/id`
 
-The `burger/id` endpoint will retrieve a specfic burger or object from the data base. 
+The `burger/id` endpoint will retrieve a specfic burger or object from the database. 
 
 [%header,cols=1]
 |===
@@ -163,5 +163,25 @@ Successful response
 
 Invalid path
 
+=== DELETE
+
+==== `/burgers/24`
+
+The burgers path will `DELETE` a burgers item from the database. 
+
+[%header,cols=1]
+|===
+|Path: https://mccabe-burger-api.herokuapp.com/burgers/24
+|===
+
+*Sample response*
+
+==== Status codes 
+
+`200 OK` 
+
+`404 Not Found`
+
+Invalid path
 
 
