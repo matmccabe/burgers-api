@@ -174,11 +174,16 @@ The burgers path will `DELETE` a burgers item from the database.
 |Path: https://mccabe-burger-api.herokuapp.com/burgers/24
 |===
 
-*Sample response*
+*Code response*
+....
+curl --location --request DELETE 'https://mccabe-burger-api.herokuapp.com/burgers/24'
+....
 
 ==== Status codes 
 
 `200 OK` 
+
+Successful response 
 
 `404 Not Found`
 
