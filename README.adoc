@@ -189,4 +189,58 @@ Successful response
 
 Invalid path
 
+=== POST
+
+==== `/burgers/`
+
+Create a menu item to add to the database.
+
+[%header,cols=1]
+|===
+|Path: https://mccabe-burger-api.herokuapp.com/burgers/24
+|===
+
+*Request Body*
+....
+{
+        "id": 28,
+        "name": "Mat Shed",
+        "restaurant": "Druthers",
+        "web": "www.druthers.com",
+        "description": "American, Bar",
+        "ingredients": [
+            "beef",
+            "blue cheese",
+            "onion",
+            "tomato",
+            "red pepper",
+            "lettuce"
+        ],
+        "addresses": [
+            {
+                "addressId": 0,
+                "number": "2212",
+                "line1": "East 6th Street",
+                "line2": "New York",
+                "postcode": "10029",
+                "country": "United States"
+}
+....
+
+==== Status codes
+
+`201 Created`
+
+Successful Post
+
+*Response*
+
+....
+{
+    "id": 28
+}
+....
+
+
+
 
