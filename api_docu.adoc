@@ -1,4 +1,3 @@
-#APIdocu
 == GET 
 
 === `/burgers`
