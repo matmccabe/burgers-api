@@ -1,9 +1,9 @@
-= Burger API documentation 
+= Burgers API documentation 
 #readme 
 
 == App inforation 
 
-Welcome to the Burger API #README. This application is an API of a burger database that utilizes RESTful API methods to GET, POST, DELETE, and PUT menu items into a burger database. 
+Welcome to the Burgers API #README. This application is a burger database that utilizes RESTful API methods to GET, POST, DELETE, and PUT menu items into a burger database. 
 
 [%header,cols=1*]
 |===
@@ -11,31 +11,31 @@ Welcome to the Burger API #README. This application is an API of a burger databa
 |===
 
 === Work citation 
-This application was developed by https://www.youtube.com/c/AniaKub%C3%B3w[Code with Ania Kubow] 
+This application was developed by https://www.youtube.com/c/AniaKub%C3%B3w[Code with Ania Kubow]. 
 
-The original source code can be located at Ania Kubow's https://github.com/kubowania/burger-api[Git Hub Repository]
+The original source code can be located at Ania Kubow's https://github.com/kubowania/burger-api[Git Hub Repository].
 
-NOTE: I do not claim ownership of this code. This code has been copied for the purposes of creating RESTful API documentation. 
+NOTE: I do not claim ownership of this code. This code has been replicated for the purposes of creating RESTful API documentation. 
 
 
 === Getting started 
 
-The Buger API is a data base for housing burger menu items at various resturants. Burgers can be added to the database with their name, ingredients, resturant name, and location. 
+The Bugers API is a database for housing burger menu items at various resturants. Burgers can be added to the database with their name, ingredients, resturant name, and location. 
 
 ==== Access 
 The API is open access to all in order to test HTTP methods for editing the database. 
 
-The api is hosted via Heroku at https://mccabe-burger-api.herokuapp.com/
+The API is hosted via Heroku at https://mccabe-burger-api.herokuapp.com/.
 
 ==== Interaction with the database
 
-Interaction with the database can be dont with GET, POST, PUT, and DELETE requests. For example, to get a specific burger with an index ID of 0, use the following code: 
+Interaction with the database can be done with GET, POST, PUT, and DELETE requests. For example, to GET a specific burger with an index ID of 0, use the following code: 
 ....
 fetch('https://my-burger-api.herokuapp.com/burgers/0')
   .then(response => response.json())
   .then(data => console.log(data));
 ....
 
-NOTE: The above code was provided by Ania Kubow in the original repository https://github.com/kubowania/burger-api[README]
+NOTE: This code was provided by Ania Kubow in the original repository https://github.com/kubowania/burger-api[README].
 
 
