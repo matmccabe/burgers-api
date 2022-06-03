@@ -2,7 +2,7 @@
 
 === `/burgers`
 
-The burgers path will `GET` a compelte list of available burgers. 
+The burgers path will `GET` a compelte list of burgers objects in the database. 
 
 [%header,cols=1]
 |===
@@ -70,7 +70,7 @@ NOTE : The `...` represents the remaining objects that have been omitted for bre
 
 === `/burgers/{id}`
 
-The `burgers/{id}` endpoint will retrieve a specfic burger or object from the database. 
+The `burgers/{id}` endpoint will retrieve a specfic burgers object from the database. 
 
 [%header,cols=1]
 |===
@@ -126,7 +126,7 @@ Invalid path
 
 === `/burgers/{id}`
 
-The burgers path will `DELETE` a burgers item from the database. 
+The burgers path will `DELETE` a burgers object from the database. 
 
 [%header,cols=1]
 |===
@@ -200,9 +200,13 @@ Successful Post
 }
 ....
 
+`404 Not Found`
+
+Invalid path
+
 == PATCH
 
-Patch and existing menu item to update an existing value in the database. The following example is to PATCH to the `name:` field of an object in the database. 
+Patch an existing burgers object to update an existing value in the database. The following example is to PATCH to the `name:` field of an object in the database. 
 
 === `/burgers/{id}`
 
@@ -249,10 +253,14 @@ Patch and existing menu item to update an existing value in the database. The fo
 }
 ....
 
+`404 Not Found`
+
+Invalid path
+
 == PUT
 === `/burgers/{id}`
 
-Use PUT method to add a field to an existing object within the database. The following example will add a secondary location address to an existing object. 
+Use PUT method to add a field to an existing burgers object in the database. The following example will add a secondary location address to an existing burgers object. 
 
 [%header,cols=1]
 |===
@@ -335,3 +343,6 @@ Use PUT method to add a field to an existing object within the database. The fol
 }
 ....
 
+`404 Not Found`
+
+Invalid path
