@@ -20,7 +20,7 @@ NOTE: I do not claim ownership of this code. This code has been replicated for t
 
 === Getting started 
 
-The Bugers API is a database for housing burger menu items at various resturants. Burgers can be added to the database with their name, ingredients, resturant name, and location. 
+The Burgers API is a database for housing burger menu items at various resturants. Burgers can be added to the database with their name, ingredients, resturant name, and location. 
 
 ==== Access 
 The API is open access to all in order to test HTTP methods for editing the database. 
