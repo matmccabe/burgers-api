@@ -346,3 +346,18 @@ Use PUT method to add a field to an existing burgers object in the database. The
 `404 Not Found`
 
 Invalid path
+
+`500 Internal Server Error`
+....
+SyntaxError: Unexpected token " in JSON 
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/app/node_modules/body-parser/lib/types/json.js: 160: 10)
+    at parse (/app/node_modules/body-parser/lib/types/json.js: 83: 15)
+    at /app/node_modules/body-parser/lib/read.js: 128: 18
+    at AsyncResource.runInAsyncScope (node:async_hooks: 202: 9)
+    at invokeCallback (/app/node_modules/raw-body/index.js: 231: 16)
+    at done (/app/node_modules/raw-body/index.js: 220: 7)
+    at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js: 280: 7)
+    at IncomingMessage.emit (node:events: 539: 35)
+    at endReadableNT (node:internal/streams/readable: 1345: 12)
+....
